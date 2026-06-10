@@ -1,0 +1,134 @@
+[
+  {
+    "orderReference": "ORD-10001",
+    "customerName": "Alicia Mokoena",
+    "status": "ordered",
+    "orderDate": "2026-06-02",
+    "warehouse": "W001",
+    "items": [
+      {
+        "itemCode": "Item1",
+        "rollId": "ROL12345",
+        "quantity": 5,
+        "unitPrice": 185,
+        "lineTotal": 925
+      }
+    ],
+    "subtotal": 925,
+    "discount": 0,
+    "tax": 138.75,
+    "totalAmountPaid": 1063.75,
+    "currency": "ZAR",
+    "paymentMethod": "card"
+  },
+  {
+    "orderReference": "ORD-10002",
+    "customerName": "Thabo Dlamini",
+    "status": "processing",
+    "orderDate": "2026-06-03",
+    "warehouse": "W001",
+    "items": [
+      {
+        "itemCode": "Item1",
+        "rollId": "ROL12445",
+        "quantity": 10,
+        "unitPrice": 185,
+        "lineTotal": 1850
+      },
+      {
+        "itemCode": "Item9",
+        "rollId": "ROL90002",
+        "quantity": 2,
+        "unitPrice": 500,
+        "lineTotal": 1000
+      }
+    ],
+    "subtotal": 2850,
+    "discount": 150,
+    "tax": 405,
+    "totalAmountPaid": 3105,
+    "currency": "ZAR",
+    "paymentMethod": "eft"
+  },
+  {
+    "orderReference": "ORD-10003",
+    "customerName": "Priya Naidoo",
+    "status": "shipped",
+    "orderDate": "2026-06-01",
+    "warehouse": "W003",
+    "trackingNumber": "TRK-778899",
+    "carrier": "DHL",
+    "items": [
+      {
+        "itemCode": "Item7",
+        "quantity": 50,
+        "unitPrice": 250,
+        "lineTotal": 12500
+      }
+    ],
+    "subtotal": 12500,
+    "discount": 0,
+    "tax": 1875,
+    "shippingCost": 250,
+    "totalAmountPaid": 14625,
+    "currency": "ZAR",
+    "paymentMethod": "card"
+  },
+  {
+    "orderReference": "ORD-10004",
+    "customerName": "Jason van Wyk",
+    "status": "ordered",
+    "orderDate": "2026-06-04",
+    "warehouse": "W003",
+    "items": [
+      {
+        "itemCode": "Item8",
+        "quantity": 30,
+        "unitPrice": 350,
+        "lineTotal": 10500
+      },
+      {
+        "itemCode": "Item7",
+        "quantity": 20,
+        "unitPrice": 250,
+        "lineTotal": 5000
+      }
+    ],
+    "subtotal": 15500,
+    "discount": 500,
+    "tax": 2250,
+    "totalAmountPaid": 17250,
+    "currency": "ZAR",
+    "paymentMethod": "credit_account"
+  },
+  {
+    "orderReference": "ORD-10005",
+    "customerName": "Nomvula Khumalo",
+    "status": "processing",
+    "orderDate": "2026-06-05",
+    "warehouse": "W001",
+    "items": [
+      {
+        "itemCode": "Item9",
+        "rollId": "ROL90007",
+        "quantity": 8,
+        "unitPrice": 500,
+        "lineTotal": 4000
+      },
+      {
+        "itemCode": "Item1",
+        "rollId": "ROL32345",
+        "quantity": 12,
+        "unitPrice": 185,
+        "lineTotal": 2220
+      }
+    ],
+    "subtotal": 6220,
+    "discount": 0,
+    "tax": 933,
+    "totalAmountPaid": 7153,
+    "currency": "ZAR",
+    "paymentMethod": "card",
+    "notes": "Priority fulfillment - repeat customer"
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "rep": "Craig",
+    "ytdSales": 1240000,
+    "sales": [
+      { "month": "january", "sales": 105000 },
+      { "month": "february", "sales": 90000 },
+      { "month": "march", "sales": 100000 },
+      { "month": "april", "sales": 100000 },
+      { "month": "may", "sales": 105000 },
+      { "month": "june", "sales": 90000 },
+      { "month": "july", "sales": 100000 },
+      { "month": "august", "sales": 100000 },
+      { "month": "september", "sales": 105000 },
+      { "month": "october", "sales": 90000 },
+      { "month": "november", "sales": 85000 },
+      { "month": "december", "sales": 170000 }
+    ]
+  },
+  {
+    "rep": "Moe",
+    "ytdSales": 1565000,
+    "sales": [
+      { "month": "january", "sales": 110000 },
+      { "month": "february", "sales": 85000 },
+      { "month": "march", "sales": 150000 },
+      { "month": "april", "sales": 150000 },
+      { "month": "may", "sales": 110000 },
+      { "month": "june", "sales": 85000 },
+      { "month": "july", "sales": 150000 },
+      { "month": "august", "sales": 150000 },
+      { "month": "september", "sales": 110000 },
+      { "month": "october", "sales": 85000 },
+      { "month": "november", "sales": 180000 },
+      { "month": "december", "sales": 200000 }
+    ]
+  },
+  {
+    "rep": "Eric",
+    "ytdSales": 2724000,
+    "sales": [
+      { "month": "january", "sales": 202000 },
+      { "month": "february", "sales": 256000 },
+      { "month": "march", "sales": 250000 },
+      { "month": "april", "sales": 250000 },
+      { "month": "may", "sales": 202000 },
+      { "month": "june", "sales": 256000 },
+      { "month": "july", "sales": 250000 },
+      { "month": "august", "sales": 250000 },
+      { "month": "september", "sales": 202000 },
+      { "month": "october", "sales": 256000 },
+      { "month": "november", "sales": 275000 },
+      { "month": "december", "sales": 75000 }
+    ]
+  }
+]

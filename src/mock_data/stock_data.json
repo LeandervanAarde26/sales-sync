@@ -1,0 +1,55 @@
+[
+  {
+    "itemCode": "Item1",
+    "collection": "Summer",
+    "whse": "W001",
+    "cut": 150,
+    "roll": 122.5,
+    "retail": 185,
+    "rolls": [
+      { "rollId": "ROL12345", "qtyOnHand": 0, "dyeLot": "5/1/2026", "expiry": "1/1/2028" },
+      { "rollId": "ROL12445", "qtyOnHand": 1, "dyeLot": "5/1/2026", "expiry": "1/1/2028" },
+      { "rollId": "ROL12346", "qtyOnHand": 0, "dyeLot": "5/1/2026", "expiry": "1/1/2028" },
+      { "rollId": "ROL22345", "qtyOnHand": 1, "dyeLot": "5/1/2026", "expiry": "1/1/2028" },
+      { "rollId": "ROL32345", "qtyOnHand": 1, "dyeLot": "5/1/2026", "expiry": "1/1/2028" },
+      { "rollId": "ROL92345", "qtyOnHand": 1, "dyeLot": "5/1/2026", "expiry": "1/1/2028" }
+    ]
+  },
+  {
+    "itemCode": "Item7",
+    "collection": "Winter",
+    "whse": "W003",
+    "cut": 200,
+    "roll": 200,
+    "retail": 250,
+    "qtyOnHand": 3
+  },
+  {
+    "itemCode": "Item8",
+    "collection": "Autumn",
+    "whse": "W003",
+    "cut": 300,
+    "roll": 300,
+    "retail": 350,
+    "qtyOnHand": 250
+  },
+  {
+    "itemCode": "Item9",
+    "collection": "Exclusive",
+    "whse": "W001",
+    "cut": 350,
+    "roll": 340,
+    "retail": 500,
+    "rolls": [
+      { "rollId": "ROL90001", "qtyOnHand": 5, "dyeLot": "5/1/2026", "expiry": "1/1/2028" },
+      { "rollId": "ROL90002", "qtyOnHand": 0, "dyeLot": "5/1/2026", "expiry": "1/1/2028" },
+      { "rollId": "ROL90003", "qtyOnHand": 0, "dyeLot": "5/1/2026", "expiry": "1/1/2028" },
+      { "rollId": "ROL90004", "qtyOnHand": 0, "dyeLot": "5/1/2026", "expiry": "1/1/2028" },
+      { "rollId": "ROL90005", "qtyOnHand": 0, "dyeLot": "5/1/2026", "expiry": "1/1/2028" },
+      { "rollId": "ROL90006", "qtyOnHand": 0, "dyeLot": "5/1/2026", "expiry": "1/1/2028" },
+      { "rollId": "ROL90007", "qtyOnHand": 0, "dyeLot": "5/1/2026", "expiry": "1/1/2028" },
+      { "rollId": "ROL90008", "qtyOnHand": 0, "dyeLot": "5/1/2026", "expiry": "1/1/2028" },
+      { "rollId": "ROL90009", "qtyOnHand": 0, "dyeLot": "5/1/2026", "expiry": "1/1/2028" }
+    ]
+  }
+]
