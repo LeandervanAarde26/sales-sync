@@ -3,30 +3,13 @@ import { AlertTriangle, XCircle, ArrowRight } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { cn } from "@/lib/utils"
 import type { IStockItem } from "@/abstractions/IStockItem"
+import { getStockSeverity } from "@/lib/stock_utils"
 
-type StockSeverity = "low" | "out"
+type AlertSeverity = "low" | "out"
 
-const LOW_STOCK_THRESHOLD = 10
-const OUT_OF_STOCK_THRESHOLD = 3
-
-const SEVERITY_CONFIG: Record<StockSeverity, { label: string; colour: string; icon: typeof AlertTriangle }> = {
+const SEVERITY_CONFIG: Record<AlertSeverity, { label: string; colour: string; icon: typeof AlertTriangle }> = {
   low: { label: "Low stock", colour: "text-amber-600 dark:text-amber-400", icon: AlertTriangle },
   out: { label: "Out of stock", colour: "text-red-600 dark:text-red-400", icon: XCircle },
-}
-
-/** Returns total quantity on hand for an item, whether roll-based or flat. */
-function getEffectiveQty(item: IStockItem): number {
-  if (item.rolls && item.rolls.length > 0) {
-    return item.rolls.reduce((sum, roll) => sum + roll.qtyOnHand, 0)
-  }
-  return item.qtyOnHand ?? 0
-}
-
-export function getStockSeverity(item: IStockItem): StockSeverity | null {
-  const qty = getEffectiveQty(item)
-  if (qty <= OUT_OF_STOCK_THRESHOLD) return "out"
-  if (qty < LOW_STOCK_THRESHOLD) return "low"
-  return null
 }
 
 interface StockAlertsProps {
@@ -46,8 +29,8 @@ export function StockAlerts({ items }: StockAlertsProps) {
           ) : (
             items.map((item) => {
               const severity = getStockSeverity(item)
-              if (!severity) return null
-              const { label, colour, icon: Icon } = SEVERITY_CONFIG[severity]
+              if (severity === "ok") return null
+              const { label, colour, icon: Icon } = SEVERITY_CONFIG[severity as AlertSeverity]
               return (
                 <div
                   key={item.itemCode}

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "CUS-001",
+    "name": "Jane Doe",
+    "tier": "enterprise",
+    "email": "jane.doe@acmecorp.co.za",
+    "phone": "+27 82 123 4567",
+    "company": "Acme Corp",
+    "totalSpent": 24500.00,
+    "status": "active"
+  },
+  {
+    "id": "CUS-002",
+    "name": "Thabo Dlamini",
+    "tier": "premium",
+    "email": "thabo.dlamini@textilesza.co.za",
+    "phone": "+27 73 456 7890",
+    "company": "Textiles ZA",
+    "totalSpent": 8750.00,
+    "status": "active"
+  },
+  {
+    "id": "CUS-003",
+    "name": "Priya Naidoo",
+    "tier": "enterprise",
+    "email": "priya@naidoogroup.co.za",
+    "phone": "+27 83 234 5678",
+    "company": "Naidoo Group",
+    "totalSpent": 14625.00,
+    "status": "active"
+  },
+  {
+    "id": "CUS-004",
+    "name": "Jason van Wyk",
+    "tier": "basic",
+    "email": "jason.vanwyk@gmail.com",
+    "phone": "+27 61 789 0123",
+    "company": "",
+    "totalSpent": 3200.00,
+    "status": "pending"
+  },
+  {
+    "id": "CUS-005",
+    "name": "Nomvula Khumalo",
+    "tier": "premium",
+    "email": "n.khumalo@fabrichouse.co.za",
+    "phone": "+27 72 345 6789",
+    "company": "Fabric House",
+    "totalSpent": 7153.00,
+    "status": "inactive"
+  },
+  {
+    "id": "CUS-006",
+    "name": "Sipho Ndlovu",
+    "tier": "basic",
+    "email": "sipho.ndlovu@outlook.com",
+    "phone": "+27 84 567 8901",
+    "company": "",
+    "totalSpent": 4255.00,
+    "status": "active"
+  },
+  {
+    "id": "CUS-007",
+    "name": "Fatima Moosa",
+    "tier": "premium",
+    "email": "fatima@moosatrading.co.za",
+    "phone": "+27 65 890 1234",
+    "company": "Moosa Trading",
+    "totalSpent": 12900.00,
+    "status": "active"
+  },
+  {
+    "id": "CUS-008",
+    "name": "Kobus van der Merwe",
+    "tier": "enterprise",
+    "email": "kobus@vdmfabrics.co.za",
+    "phone": "+27 82 901 2345",
+    "company": "VdM Fabrics",
+    "totalSpent": 31625.00,
+    "status": "pending"
+  }
+]

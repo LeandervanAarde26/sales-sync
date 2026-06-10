@@ -1,0 +1,208 @@
+[
+  {
+    "id": "EVT-001",
+    "title": "Team Standup ",
+    "category": "meeting",
+    "rep": "Craig",
+    "date": "2026-06-10",
+    "startTime": "09:00",
+    "endTime": "09:30"
+  },
+  {
+    "id": "EVT-002",
+    "title": "Acme Corp Client Call",
+    "category": "call",
+    "rep": "Craig",
+    "date": "2026-06-10",
+    "startTime": "14:00",
+    "endTime": "15:00",
+    "description": "Quarterly review call with Acme procurement team"
+  },
+  {
+    "id": "EVT-003",
+    "title": "Client Onboarding HERE",
+    "category": "meeting",
+    "rep": "Moe",
+    "date": "2026-06-10",
+    "startTime": "11:00",
+    "endTime": "12:00",
+    "description": "Onboarding session for new enterprise client"
+  },
+  {
+    "id": "EVT-004",
+    "title": "Pipeline Review",
+    "category": "meeting",
+    "rep": "Eric",
+    "date": "2026-06-10",
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "EVT-005",
+    "title": "Sales Presentation",
+    "category": "presentation",
+    "rep": "Craig",
+    "date": "2026-06-11",
+    "startTime": "10:00",
+    "endTime": "11:30",
+    "description": "Q3 product range presentation to VdM Fabrics"
+  },
+  {
+    "id": "EVT-006",
+    "title": "Discovery Call",
+    "category": "call",
+    "rep": "Moe",
+    "date": "2026-06-11",
+    "startTime": "09:00",
+    "endTime": "09:30"
+  },
+  {
+    "id": "EVT-007",
+    "title": "Cold Call Block",
+    "category": "call",
+    "rep": "Eric",
+    "date": "2026-06-11",
+    "startTime": "08:00",
+    "endTime": "10:00",
+    "description": "Outbound prospecting block"
+  },
+  {
+    "id": "EVT-008",
+    "title": "Team Meeting",
+    "category": "meeting",
+    "rep": "Craig",
+    "date": "2026-06-12",
+    "startTime": "09:00",
+    "endTime": "10:00"
+  },
+  {
+    "id": "EVT-009",
+    "title": "Proposal Presentation",
+    "category": "presentation",
+    "rep": "Moe",
+    "date": "2026-06-12",
+    "startTime": "14:00",
+    "endTime": "15:30",
+    "description": "Presenting custom fabric proposal to Textile ZA"
+  },
+  {
+    "id": "EVT-010",
+    "title": "Lunch & Learn",
+    "category": "other",
+    "rep": "Eric",
+    "date": "2026-06-12",
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "EVT-011",
+    "title": "Follow-up Call",
+    "category": "call",
+    "rep": "Moe",
+    "date": "2026-06-14",
+    "startTime": "10:00",
+    "endTime": "10:30"
+  },
+  {
+    "id": "EVT-012",
+    "title": "Weekly Review",
+    "category": "meeting",
+    "rep": "Craig",
+    "date": "2026-06-15",
+    "startTime": "14:00",
+    "endTime": "15:00"
+  },
+  {
+    "id": "EVT-013",
+    "title": "Contract Negotiation",
+    "category": "meeting",
+    "rep": "Eric",
+    "date": "2026-06-15",
+    "startTime": "15:00",
+    "endTime": "16:00",
+    "description": "Final terms discussion with Naidoo Group"
+  },
+  {
+    "id": "EVT-014",
+    "title": "Team Sync",
+    "category": "meeting",
+    "rep": "Moe",
+    "date": "2026-06-16",
+    "startTime": "09:00",
+    "endTime": "09:30"
+  },
+  {
+    "id": "EVT-015",
+    "title": "Demo Call",
+    "category": "call",
+    "rep": "Eric",
+    "date": "2026-06-16",
+    "startTime": "10:00",
+    "endTime": "11:00"
+  },
+  {
+    "id": "EVT-016",
+    "title": "Product Demo",
+    "category": "presentation",
+    "rep": "Craig",
+    "date": "2026-06-17",
+    "startTime": "11:00",
+    "endTime": "12:00",
+    "description": "Live product walkthrough for Moosa Trading"
+  },
+  {
+    "id": "EVT-017",
+    "title": "Quarterly Review",
+    "category": "meeting",
+    "rep": "Moe",
+    "date": "2026-06-18",
+    "startTime": "13:00",
+    "endTime": "14:30"
+  },
+  {
+    "id": "EVT-018",
+    "title": "Product Walkthrough",
+    "category": "presentation",
+    "rep": "Eric",
+    "date": "2026-06-19",
+    "startTime": "14:00",
+    "endTime": "15:00"
+  },
+  {
+    "id": "EVT-019",
+    "title": "New Lead Call",
+    "category": "call",
+    "rep": "Craig",
+    "date": "2026-06-19",
+    "startTime": "09:00",
+    "endTime": "09:30"
+  },
+  {
+    "id": "EVT-020",
+    "title": "End of Month Planning",
+    "category": "meeting",
+    "rep": "Moe",
+    "date": "2026-06-29",
+    "startTime": "10:00",
+    "endTime": "11:00"
+  },
+  {
+    "id": "EVT-021",
+    "title": "Closing Call",
+    "category": "call",
+    "rep": "Eric",
+    "date": "2026-06-29",
+    "startTime": "14:00",
+    "endTime": "14:30",
+    "description": "Final closing call for Jacobs order"
+  },
+  {
+    "id": "EVT-022",
+    "title": "June Wrap-up",
+    "category": "meeting",
+    "rep": "Craig",
+    "date": "2026-06-30",
+    "startTime": "15:00",
+    "endTime": "16:00"
+  }
+]

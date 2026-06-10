@@ -40,9 +40,9 @@ export default function TopNav() {
 
       <div className="flex items-center gap-2.5 text-sm font-medium text-foreground">
         <Avatar>
-          <AvatarFallback>L</AvatarFallback>
+          <AvatarFallback>A</AvatarFallback>
         </Avatar>
-        Leander
+        Admin
       </div>
     </header>
   )

@@ -2,40 +2,32 @@ import { Link } from "react-router-dom"
 import { ArrowRight } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { cn } from "@/lib/utils"
-
-type OrderStatus = "completed" | "shipped" | "processing" | "cancelled"
-
-interface Order {
-  id: string
-  orderNumber: string
-  customerName: string
-  value: string
-  status: OrderStatus
-}
+import type { IOrder, OrderStatus } from "@/abstractions/IOrder"
 
 const STATUS_STYLES: Record<OrderStatus, string> = {
+  ordered: "text-indigo-600 dark:text-indigo-400",
   completed: "text-emerald-600 dark:text-emerald-400",
   shipped: "text-blue-600 dark:text-blue-400",
   processing: "text-amber-600 dark:text-amber-400",
   cancelled: "text-red-600 dark:text-red-400",
 }
 
-// Placeholder — replace with real data from API
-const RECENT_ORDERS: Order[] = [
-  { id: "1", orderNumber: "#ORD-001", customerName: "Jane Doe", value: "R 450.00", status: "completed" },
-  { id: "2", orderNumber: "#ORD-002", customerName: "John Smith", value: "R 200.00", status: "processing" },
-  { id: "3", orderNumber: "#ORD-003", customerName: "Sarah Lee", value: "R 850.00", status: "shipped" },
-]
+function formatAmount(amount: number, currency: string): string {
+  const symbol = currency === "ZAR" ? "R" : currency
+  return `${symbol} ${amount.toLocaleString("en-ZA", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
+}
 
-function OrderRow({ order }: { order: Order }) {
+function OrderRow({ order }: { order: IOrder }) {
   return (
     <div className="flex items-center justify-between py-3 border-b border-border last:border-0">
       <div className="flex flex-col gap-0.5">
-        <span className="text-sm font-medium leading-none">{order.orderNumber}</span>
+        <span className="text-sm font-medium leading-none">{order.orderReference}</span>
         <span className="text-xs text-muted-foreground leading-none mt-1">{order.customerName}</span>
       </div>
       <div className="flex flex-col items-end gap-0.5">
-        <span className="text-sm font-medium leading-none">{order.value}</span>
+        <span className="text-sm font-medium leading-none">
+          {formatAmount(order.totalAmountPaid, order.currency)}
+        </span>
         <span className={cn("text-xs capitalize leading-none mt-1", STATUS_STYLES[order.status])}>
           {order.status}
         </span>
@@ -44,7 +36,11 @@ function OrderRow({ order }: { order: Order }) {
   )
 }
 
-export function RecentOrders() {
+interface RecentOrdersProps {
+  orders: IOrder[]
+}
+
+export function RecentOrders({ orders }: RecentOrdersProps) {
   return (
     <Card className="flex flex-col">
       <CardHeader className="pb-2">
@@ -52,9 +48,13 @@ export function RecentOrders() {
       </CardHeader>
       <CardContent className="flex-1 flex flex-col justify-between px-5 pb-4">
         <div>
-          {RECENT_ORDERS.map((order) => (
-            <OrderRow key={order.id} order={order} />
-          ))}
+          {orders.length === 0 ? (
+            <p className="text-xs text-muted-foreground py-2">No recent orders.</p>
+          ) : (
+            orders.map((order) => (
+              <OrderRow key={order.orderReference} order={order} />
+            ))
+          )}
         </div>
         <Link
           to="/orders"
