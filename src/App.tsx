@@ -5,6 +5,7 @@ import Orders from './pages/Orders'
 import Customers from './pages/Customers'
 import Stock from './pages/Stock'
 import Calendar from './pages/Calendar'
+import Reps from './pages/Reps'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/customers" element={<Customers />} />
           <Route path="/stock" element={<Stock />} />
           <Route path="/calendar" element={<Calendar />} />
+          <Route path="/reps" element={<Reps />} />
         </Routes>
       </main>
     </BrowserRouter>
